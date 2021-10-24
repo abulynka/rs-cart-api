@@ -1,18 +1,14 @@
-## Init project
+## Commands
 
 ```bash
-# eb init --profile personalAccount -r eu-west-1
-eb init -r eu-west-1
-```
+# eb
+eb init -r eu-west-1 abulynka-cart-api
+eb create --single --cname abulynka-cart-api-test
 
-## Docker build
+# remove eb
+eb list
+eb terminate NAME
 
-```bash
+# docker
 docker build -f ./Dockerfiles/Dockerfile -t cart-api:latest .
-```
-
-## Deploy
-
-```bash
-eb create --single
 ```
