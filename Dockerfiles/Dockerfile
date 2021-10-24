@@ -24,4 +24,4 @@ USER node
 ENV PORT=8080
 EXPOSE 8080
 
-CMD ["pm2=runtime", "dist/main.js"]
+CMD ["node", "dist/main.js"]
